@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valuenumber {
+    width: 60px;
+}
+
+#yvaluerange {
+    width: 500px;
+}
+
+.point-from {
+    padding: 4px;
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    padding: 20px;
+  }

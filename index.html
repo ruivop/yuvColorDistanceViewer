@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color selector</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>YUV color distance viewer</h1>
+    <div class="flex-container">
+        <div>
+            <canvas width="600" height="600" id="yuv-color-table">Your browser does not support the HTML5 canvas
+                tag.</canvas>
+            <div>
+                <label for="yvalue">Y:</label>
+                <input id="yvaluerange" type="range" min="0" max="255">
+                <input id="yvaluenumber" class="valuenumber" type="number" step="0.5">
+            </div>
+        </div>
+        <div>
+            <h2>Point</h2>
+            <div>
+                <div class="flex-container">
+                    <canvas width="127" height="127" id="color-point">Your browser does not support the HTML5 canvas
+                        tag.</canvas>
+                    <div>
+                        <div class="point-from">
+                            <label>Y:</label>
+                            <input class="valuenumber" id="yColorVal" type="number" step="0.5">
+                        </div>
+                        <div class="point-from">
+                            <label>U:</label>
+                            <input class="valuenumber" id="uColorVal" type="number" step="0.5">
+                        </div>
+                        <div class="point-from">
+                            <label>V:</label>
+                            <input class="valuenumber" id="vColorVal" type="number" step="0.5">
+                        </div>
+                    </div>
+                </div>
+                <div class="point-from">
+                    <label>Euclidean distance:</label>
+                    <input class="valuenumber" id="maxColorDistance" type="number" step="0.5">
+                </div>
+            </div>
+            <div class="point-from">
+                <button id="animate-button">Animate</button>
+            </div>
+            <div class="point-from">
+                <button id="share-button">Share</button>
+                <input id="share-text-area" value="placeholder" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
